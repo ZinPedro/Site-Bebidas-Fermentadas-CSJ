@@ -1,0 +1,62 @@
+.ciencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    padding: 5rem;
+}
+
+.ciencias h1{
+    font-size: 3rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ciencias___titulo{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ciencias___texto{
+    font-size: 1.75rem;
+}
+
+.ciencias___img{
+    width: 15rem;
+    height: 15rem;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 450px){
+    .ciencias{
+        padding: 2rem;
+    }
+    
+    .ciencias h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .ciencias___titulo{
+        font-size: 1.5rem;
+    }
+    
+    .ciencias___texto{
+        font-size: 1.25rem;
+    }
+    
+    .ciencias___img{
+        width: 10rem;
+        height: 10rem;
+    }
+}

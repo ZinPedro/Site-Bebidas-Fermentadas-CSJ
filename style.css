@@ -1,0 +1,225 @@
+:root {
+    --branco-cabecalho: #EFEFEF;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: var(--branco-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 0 #000000;
+}
+.cabecalho__logocsj {
+    width: 12.5rem;
+    height: 6rem;
+}
+
+.cabecalho__logo-ciencias {
+    width: 6em;
+    height: 6em
+}
+
+.cabecalho__menu{
+    background-color: rgb(163, 163, 163);
+    box-shadow: 0 0 10px 0 #000000;
+    padding: 0.75rem;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cabecalho___item a {
+	text-transform: uppercase;
+    text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-size: 12px;
+    text-align: center;
+}
+.principal{
+    background-color: rgb(223, 222, 222);
+}
+
+.infos{
+    display: flex;
+    gap: 1.5rem;
+
+    padding: 5rem;
+}
+
+.infos__textos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infostexto{
+    font-size: 1.5rem;
+}
+
+.principal__titulo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 4rem;
+}
+
+.container__imagem1 {
+    width: 35rem;
+    height: 25rem;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    padding: 5rem;
+}
+
+.lista___item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    background-color: white;
+}
+
+.lista____imagem{
+    width: 3rem;
+    height: 3rem;
+}
+
+.lista__menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.lista_titulo {
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+}
+
+.lista____texto{
+    font-size: 2rem;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+
+    padding: 2rem;
+}
+
+.rodape__logo {
+    width: 10em;
+}
+
+.rodape__texto {
+    color: rgb(226, 226, 226);
+    padding-bottom: 3px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.rodape__texto_escola {
+    color: rgb(226, 226, 226);
+    padding-bottom: 3px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.projetos_texto {
+    color: rgb(21, 142, 208);
+    font-size: 0.75rem;
+    font-weight: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px){
+    .infos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    
+        padding: 2.5rem;
+    }    
+
+    .principal__titulo{
+        font-size: 1.5rem;
+    
+        padding: 2rem;
+    }
+
+    .container__imagem1 {
+        width: 20rem;
+        height: 15rem;
+    }
+    
+    .infostexto{
+        font-size: 1.2rem;
+    }
+
+    .lista_titulo{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .lista__menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista___item{
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        border: 1px solid #000;
+        border-radius: 10px;
+
+        padding: 0.5rem;
+
+        background-color: white;
+    }
+}
